@@ -1,0 +1,105 @@
+.tutorial-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    color: rgb(255, 208, 0);
+    margin-top: 40px;
+    margin-left: 20px;
+    opacity: 0.6;
+}
+
+.arrow:hover {
+    animation: bounce 0.4s alternate infinite;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.a-long-time-ago {
+    /* cosmétique */
+    font-size: 32px;
+    color: #4bd5ee;
+    /* Animation */
+    /* Apparition et disparition progressive */
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+}
+
+@keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.crawl {
+    /* centrage de l'élément' */
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 1200px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    /* cosmétique */
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+    /* Applique la transformation  */
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.crawl > div {
+    /* positionne la div en bas de l'écran (non visible) */
+    /* l'animation la fait remonter progressivement */
+    position: absolute;
+    top: 100%; 
+    animation-delay: 2s; /* Démarre l'animation après la première */
+    animation-duration: 60s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1; /* disparition progressive à la fin */
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+h1 {
+    color: yellow;
+}
+
+.title {
+    font-size: 80px;
+    color:rgb(255, 208, 0)
+}

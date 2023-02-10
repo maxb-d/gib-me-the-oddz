@@ -1,0 +1,20 @@
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(81, 81, 81);
+    height: 70px;
+    width: 350px;
+    border-radius: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    animation: toggleOpacity 0.5s alternate infinite;
+}
+
+@keyframes toggleOpacity {
+    from { opacity: 0.8;}
+    to { opacity: 0.4;}
+}

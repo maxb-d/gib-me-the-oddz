@@ -1,0 +1,32 @@
+.upload-button--wrapper {
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: rgb(204, 204, 204);
+    animation: round 0.5s alternate infinite;
+    cursor: pointer;
+}
+
+.upload-button--wrapper:hover {
+    animation: round 0.5s alternate infinite;
+    animation: bounce 0.4s alternate infinite;
+}
+
+input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+@keyframes round {
+    from { box-shadow: 0 0 0 2px #E94E3D; }
+    to {box-shadow: 0 0 0 2px #fff;}
+}

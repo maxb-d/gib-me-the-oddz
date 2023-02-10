@@ -1,0 +1,36 @@
+.file-item {
+    margin: 1.2em 0;
+    padding: 1.2em 1.5em;
+    background-color: rgb(255, 230, 0);
+    color: black;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    opacity: 0.6;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 45px;
+}
+.file-item:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.file-icon {
+    font-size: 1.2em;
+    margin-right: 0.8em;
+}
+
+.file-name {
+    flex: 1;
+    font-size: 0.9em;
+    cursor: default;
+    font-weight: 600;
+}
+
+.actions {
+    justify-self: flex-end;
+    cursor: pointer;
+}
